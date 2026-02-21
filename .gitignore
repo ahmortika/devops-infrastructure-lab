@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.venv/
+
+# Environment variables
+.env
+
+# Logs
+*.log
+
+# Docker
+docker/postgres/data/
+
+# Kubernetes
+*.secret.yaml
+
+# OS
+.DS_Store
+Thumbs.db
