@@ -18,6 +18,7 @@ The goal of this project is to simulate a real-world DevOps infrastructure by de
 - Bash scripting
 
 ## 🗂 Project Structure
+```
 .
 ├── docker/
 │ ├── docker-compose.yml
@@ -33,7 +34,7 @@ The goal of this project is to simulate a real-world DevOps infrastructure by de
 │ └── log-monitor.sh
 ├── .gitignore
 └── README.md
-
+```
 ## 🚀 What This Project Demonstrates
 
 - Containerized application deployment with Docker
