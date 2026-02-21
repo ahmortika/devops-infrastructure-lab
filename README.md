@@ -34,7 +34,6 @@ The goal of this project is to simulate a real-world DevOps infrastructure by de
 ├── .gitignore
 └── README.md
 
-
 ## 🚀 What This Project Demonstrates
 
 - Containerized application deployment with Docker
