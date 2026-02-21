@@ -52,3 +52,32 @@ This project was created as a self-learning and portfolio project to gain hands-
 ## 📫 Contact
 
 GitHub: https://github.com/ahmortika
+
+## 📸 Project Screenshots
+
+The following screenshots were taken during the real execution of the project.
+They demonstrate that the infrastructure components are properly deployed, running, and managed.
+
+### 🐳 Docker Compose – Running Services
+Docker Compose successfully running all defined services such as Flask, PostgreSQL, and Nginx.
+![Docker Compose Running](screenshots/docker-compose-running.png)
+
+### ☸️ Kubernetes – Active Pods
+Kubernetes workloads running on Minikube, showing healthy Flask, PostgreSQL, and Nginx pods.
+![Kubernetes Pods](screenshots/kubectl-get-pods.png)
+
+### 🗄️ PostgreSQL – pgAdmin Dashboard
+pgAdmin interface connected to the PostgreSQL database running inside the infrastructure.
+![pgAdmin Dashboard](screenshots/pgadmin4-dashboard.png)
+
+### 📊 Prometheus – Monitoring UI
+Prometheus web interface displaying active targets and metrics collection.
+![Prometheus UI](screenshots/prometheus-ui.png)
+
+### 🔐 Kubernetes RBAC – Role-Based Access Control
+Role-Based Access Control (RBAC) configuration demonstrating permission separation.
+![RBAC](screenshots/rbac-role-based-access.png)
+
+### 🧭 Portainer – Container Management Dashboard
+Portainer dashboard used for container and service management.
+![Portainer Dashboard](screenshots/portainer-dashboard.png)
