@@ -1,21 +1,30 @@
-version: "3.8"
+version: "3.9"
 
 services:
   db:
     image: postgres:15
+    container_name: proje_postgres
     environment:
-      POSTGRES_USER: admin
-      POSTGRES_PASSWORD: password
-      POSTGRES_DB: appdb
-    volumes:
-      - ./postgres/data:/var/lib/postgresql/data
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: sifre123
+      POSTGRES_DB: postgres
     ports:
       - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
 
-  app:
-    build:
-      context: ../app/flask-app
-    depends_on:
-      - db
+  web:
+    build: .
+    container_name: proje_web
+    command: python app.py
+    volumes:
+      - ./app:/src              # burda kodları mount ediyoz
+      - ~/project_app_logs:/logs   # burdada log klasörünü mount ediyoruz
     ports:
       - "5000:5000"
+    depends_on:
+      - db
+
+volumes:
+  postgres_data:
+
